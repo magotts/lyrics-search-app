@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --color-primary: #4e77ff;
+  --color-sec: pink;
+  --color-grey: #eee;
+  --color-dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url(./images/music2.jpeg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 10vh;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 900px;
+  background: rgba(0, 0, 0, 0.7);
+  background-attachment: fixed;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+
+/* UTILITY */
+.p-small {
+  padding-bottom: 5px;
+}
+.p-medium {
+  padding-bottom: 10px;
+}
+.p-y {
+  padding: 10px 0;
+}
+.m-y {
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .container {
+  padding: 2rem 0;
+  text-align: center;
+  background: linear-gradient(50deg, var(--color-sec),var(--color-grey)) ;
+  border-radius: 10rem 10rem 10rem 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: black;
+  padding-bottom: 1rem;
+}
+
+form input,
+form button {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  
+}
+form input {
+  width: 50%;
+  border: 5px outset #ff0000;
+  margin-right: 3px;
+  
+  /* border-bottom: 3px solid var(--color-primary); */
+}
+
+form button {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  border: 1px solid #fff;
+}
+
+section .container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.songs {
+  width: 70%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.songs li {
+  font-size: 1.4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px dashed yellow;
+}
+
+.songs li span {
+  font-size: 1.4rem;
+  background-color: green;
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.homebutton {
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 20%;
+}
+
+.homebutton:hover {
+  background-color:black;
+  color: red;
+}
+
+.homebutton:active {
+  background-color:black;
+  color: blue;
+}
+
+footer {
+  position: relative;
+  height: 6rem;  
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;  
+}
+
+.smallpic {
+  width: auto;
+  height: 3em;
+}
+
+
+footer .made {
+  font-size: 1.1rem;
+}
+
+.resultheader {
+  color: yellow;
+  font-size: 3em;
+}
+
+@media (max-width: 700px) {
+header {
+  padding: 50px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+}
