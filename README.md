@@ -15,7 +15,4 @@
 - Lyrics
 - Widget Player by Deezer
 
-### Work in Progress
-- Lyrics on Modal
-
 #### You can contact me at techybet@gmail.com.
